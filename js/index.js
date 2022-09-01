@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {//Getting the list of books
   .then(resp => resp.json())
   .then(data => data.forEach (renderContent))
 //   .then((bookInfo) => console.log(bookInfo))
-  // generateBookList(bookInfo));
+//   generateBookList(bookInfo));
   
 });
 
@@ -98,7 +98,7 @@ function renderContent(books){
     divContent.append(discrip)
   
     const price = document.querySelector('.price')
-    price.innerHTML = '<span> ksh' + books.price + '</span>'
+    price.innerText = '<span> ksh' + books.price + '</span>'
     divContent.append(price)
 }
 console.log(renderContent())
