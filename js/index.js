@@ -72,10 +72,67 @@ function getaAllBooks(){
     // console.log(books)
      renderContent(books)
     // renderBooks(books)
+    // renderBooksInLst(books)
+    // generateBookList(books)
   ))
-  
-
 }
+
+
+/*** lets try it in a list */
+// function renderBooksInLst (books){
+//   const listCard = document.createElement('li')
+//   listCard.innerHTML = `
+//   <div class="icons">
+//   //     <a href="#" class="fas fa-search"></a>
+//   //     <a href="#" class="fas fa-heart"></a>
+//   //     <a href="#" class="fas fa-eye"></a>
+//   //   </div>
+//   //   <div id="image">
+//   //     <img src="${books.img_url}" alt="">
+//   //   </div>
+//   //   <div id="content">
+//   //     <h3>${books.title}</h3> 
+//   //     <h5>${books.author}</h5>
+//   //     <p>${books.description}</p>
+//   //     <div class="price">$ ${books.price}</div>
+//   //     <a href="#" class="btn" id="btn">Like</a>
+//   //   </div>
+//   `
+//   document.querySelector('.swiper-slide box').appendChild(listCard)
+
+// }
+
+// targeting elements and appending it to a list
+// function generateBookList(books){
+//   const parentDiv = document.querySelector('.swiper-slide box')
+//   const listCard = document.querySelector('li')
+//   const divImage = document.querySelector('#image img')
+//   divImage.src = books.img_url
+
+//   // const divContect = document.querySelector('#content')
+//   // const title = document.querySelector('h3').textContent = books.title
+//   // const author = document.querySelector('h5').textContent = books.author
+//   // const descrip= document.querySelector('#des').textContent = books.description
+//   // const price = document.querySelector('.price').textContent = `Ksh ${books.price}`
+//   // const btn = document.querySelector('#btn')
+//   // divContect.append(title,author,descrip,price,btn)
+
+//   // listCard.append(divImage,divContect)
+//   // parentDiv.appendChild(listCard)
+
+
+//   /*** this isnt not working also */
+//   const divContect = document.querySelector('#content')
+//   divContect.innerText = document.querySelector('h3').textContent = divContect.title
+//   divContect.innerText = document.querySelector('h5').textContent = books.author
+//   divContect.innerText = document.querySelector('p').textContent = books.description
+//   divContect.innerText = document.querySelector('.price').textContent = `Ksh ${books.price}`
+
+//   listCard.append(divImage,divContect)
+//   parentDiv.appendChild(listCard)
+// }
+// generateBookList()
+// console.log(generateBookList())
 
 function renderContent(books){
 //   const parentDiv = document.querySelector('.swiper-slide box')
