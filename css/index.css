@@ -342,10 +342,10 @@ html::-webkit-scrollbar-thumb{
 } */
 .swiper-button-next,
 .swiper-button-prev{
-    border:var(--border-hover);
+    border:gray;
     height:4rem;
     width:4rem;
-    color:var(--black);
+    color:black;
     background: #fff;
 }
 .swiper-button-next::after,
@@ -373,7 +373,7 @@ html::-webkit-scrollbar-thumb{
 }
 .newsletter form h3{
   font-size: 2.2rem;
-  color:#fff;
+  color:rgb(17, 8, 8);
   padding-bottom: .7rem;
   font-weight: normal;
 }
@@ -396,7 +396,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .reviews-slider .box:hover{
-  border:.1rem solid #17eb6f;
+  border:.1rem solid green;
 }
 .reviews-slider .box img{
   height:7rem;
