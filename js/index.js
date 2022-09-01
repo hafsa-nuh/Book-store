@@ -1,8 +1,5 @@
 let searchForm = document.querySelector('.search-form');
 
-
-
-
 // adding event lisrener to the serch btn
 document.querySelector('#search-btn').addEventListener('click', () =>{
   searchForm.classList.toggle('active');
@@ -91,17 +88,14 @@ function renderContent(books){
 renderContent()
   
 
- // const image = document.createElement('img')
-    // // image.src = books.img_url
-    // image.setAttribute('src',books.img_url)
-    // divImage.append(image)
+ 
 // const divImage = document.querySelector('#image')
 // const divContent = document.querySelector('#content')
 // function generateBookList(bookID){
-//   fetch(`http://localhost:3000/books/${bookID}`) 
-//   .then(resp => resp.json()) 
-//   .then((bookInfo) =>  {bookInfo.forEach(books => {
-//     console.log(books)
+  // const image = document.createElement('img')
+    // // image.src = books.img_url
+    // image.setAttribute('src',books.img_url)
+    // divImage.append(image)
 
 //     const image = document.createElement('img')
 //     image.src = books.img_url
@@ -157,6 +151,7 @@ let swiperBook = new Swiper(".featured-slider", {
   },
 });
 
+//  swipe for reviews
 let swiperReview = new Swiper(".reviews-slider", {
   spaceBetween: 10,
   grabCursor:true,
@@ -178,6 +173,8 @@ let swiperReview = new Swiper(".reviews-slider", {
     },
   },
 });
+
+// swipe for blog
 let swiperBlog = new Swiper(".blogs-slider", {
   spaceBetween: 10,
   grabCursor:true,
@@ -199,6 +196,13 @@ let swiperBlog = new Swiper(".blogs-slider", {
     },
   },
 });
+
+// read more btn for blog
+const readMore = document.querySelector('#btn')
+const text = document.querySelector('#text')
+readMore.addEventListener('click', ()=>{
+  text.classList.toggle('show-more')
+})
 
 // loging
 function loader(){

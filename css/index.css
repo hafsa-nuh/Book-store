@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-/* :root{
-    /* --green:#0de755;  */
-    /* --dark-color:#17eb6f; */
-    /* --black:rgb(229, 11, 11);  LOGO and NAME COLor */
-    /* --light-color:rgb(226, 16, 16); */
-    /* --border:.1rem solid rgba(225, 24, 24, 0.1); *  the search bar border */
-    /* --border-hover:.1rem solid var(--black); */
-    /* --box-shadow:5rem 3rem rgba(0, 0, 0, 0.1);  */
-/* } */ 
-
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
@@ -57,14 +47,14 @@ html::-webkit-scrollbar-thumb{
 }
 
 .header .header-1 .logo i{
-    color:green;
+    color:purple;
 }
 .header-1 .search-form{
     width:50rem;
     height:5rem;
     border:0.1rem solid rgba(225, 24, 24, 0.1);
     overflow: hidden;
-    background:#fff;
+    background:rgb(255, 255, 255);
     display:flex;
     align-items: center;
     border-radius: .5rem;
@@ -76,13 +66,11 @@ html::-webkit-scrollbar-thumb{
     height:100%;
     width:100%;
     text-transform: none;
-    /* color:pink; */
 }
 
 .header-1 .search-form label{
     font-size: 2.5rem;
     padding-right: 1.5rem;
-    /* color:var(--black); */
     cursor: pointer;
 }
 
@@ -94,7 +82,7 @@ html::-webkit-scrollbar-thumb{
 .header-1 .icons a{
     font-size: 2.5rem;
     margin-left: 1.5rem;
-    color:goldenrod;
+    color:purple;
     cursor: pointer;
 }
 
@@ -106,7 +94,7 @@ html::-webkit-scrollbar-thumb{
     display: none;
 }
 .header-2{
-    background:green;
+    background:purple;
 }
 
 .navbar{
@@ -136,7 +124,7 @@ html::-webkit-scrollbar-thumb{
   display: flex;
   align-items: center;
   justify-content: center;
-  background:rgba(241, 238, 238, 0.9);
+  background:rgba(255, 255, 255, 0.9) ;
   position:fixed;
   top:0; right:-105%;
   z-index: 10000;
@@ -146,7 +134,7 @@ html::-webkit-scrollbar-thumb{
 
 
 .login-form-container form{
-  background:#fff;
+  background:rgb(234, 221, 221);
   border:.1rem solid rgba(225, 24, 24, 0.1);
   width:40rem;
   padding:2rem;
@@ -197,7 +185,7 @@ html::-webkit-scrollbar-thumb{
   padding:.9rem 3rem;
   border-radius: .5rem;
   color:#fff;
-  background:green;
+  background:purple;
   font-size: 1.7rem;
   cursor: pointer;
   font-weight: 500;
@@ -218,7 +206,7 @@ html::-webkit-scrollbar-thumb{
   font-size: 1.5rem;
 }
 .login-form-container form p a{
-  color:rgb(85, 136, 9);
+  color:purple;
   text-decoration: underline;
 }
 
@@ -339,7 +327,7 @@ html::-webkit-scrollbar-thumb{
   padding:1.3rem 1.5rem;
 }
 .icons a:hover{
-  background:green;
+  background:purple;
   color:#fff;
 }
 #content{
@@ -443,7 +431,7 @@ html::-webkit-scrollbar-thumb{
 }
 .reviews-slider .box .stars i{
   font-size: 1.7rem;
-  color:green;
+  color:purple;
 }
 
 /* blog section */
@@ -482,6 +470,12 @@ html::-webkit-scrollbar-thumb{
   padding:1rem 0;
   line-height: 2;
 }
+.content .more-text{
+  display: none;
+}
+#text.show-more .more-text{
+  display: inline;
+}
 
 /* footer */
 .footer .box-container{
@@ -503,7 +497,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .footer .box-container .box a i{
-  color:green;
+  color:purple;
   padding-right: .5rem;
 }
 .footer .box-container .box a:hover i{
@@ -524,7 +518,7 @@ html::-webkit-scrollbar-thumb{
   line-height: 5rem;
   font-size: 2rem;
   color:#fff;
-  background:green;
+  background:purple;
   margin:0 .3rem;
   border-radius: 50%; 
 }
@@ -541,7 +535,7 @@ html::-webkit-scrollbar-thumb{
   text-align: center;
 }
 .credit span{
-  color:green;
+  color:purple;
 }
 .loader-container{
   position: fixed;
