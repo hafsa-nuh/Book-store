@@ -66,14 +66,25 @@ document.addEventListener("DOMContentLoaded", () => {//Getting the list of books
 });
 
 function getaAllBooks(){
+  
   fetch("http://localhost:3000/books") 
-  .then(resp => resp.json())
+  .then (function(response){
+    return response.json();
+  })
+
+  // .then(function(data){
+  //   renderContent(data.message)
+  // })
+  // .then(resp => resp.json())
   .then(data => data.forEach (books =>
-    // console.log(books)
-     renderContent(books)
+  //   // console.log(books)
+    renderContent(books)
     // renderBooks(books)
     // renderBooksInLst(books)
     // generateBookList(books)
+    // .catch(function(books){
+    //   console.log(books)
+    // })
   ))
 }
 
@@ -99,7 +110,6 @@ function getaAllBooks(){
 //   //   </div>
 //   `
 //   document.querySelector('.swiper-slide box').appendChild(listCard)
-
 // }
 
 // targeting elements and appending it to a list
@@ -156,15 +166,16 @@ function renderContent(books){
 
 
 /** withot appending and targeting each element it only brings the last object */
-  const divImage = document.querySelector('#image img')
-  divImage.src = books.img_url
+  const divImage = document.getElementById("#image img")
+  divImage.src = document.getElementById('#image')
+
   document.querySelector('#content h3').textContent = books.title
   document.querySelector('#content h5').textContent = books.author
   document.querySelector('#content p').textContent = books.description
   document.querySelector('#content .price').textContent = `Ksh ${books.price}`
-
+  
 }
-renderContent()
+
 
 /*** it doesnt work and it doesnt displany anything */
 // function renderBooks(books){
