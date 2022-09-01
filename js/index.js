@@ -231,7 +231,7 @@ let swiperBook = new Swiper(".featured-slider", {
   loop:true,
   centeredSlides: true,
   autoplay: {
-    delay: 3000,
+    delay: 1000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -316,5 +316,50 @@ function fadeOut(){
   setTimeout(loader, 1000);
 }
 fadeOut()
+
+
+
+
+
+// lets see if this will work
+
+// const booksList = (bookID)=>{
+//   fetch(`http://localhost:3000/books/${bookID}`) 
+//   .then(resp => resp.json()) 
+//   .then((bookInfo) => {
+//     const divImage = document.querySelector('#image img')
+//     divImage.src = bookInfo.img_url
+
+//     const divContent = document.querySelector('#content')
+//     const title = document.createElement('h3')
+//     title.textContent = books.title
+//     divContent.append(title)
+      
+//     const author = document.createElement('h5')
+//     author.textContent = books.author
+//     divContent.append(author)
+      
+//     const discrip = document.createElement('p')
+//     discrip.textContent = books.description
+//     divContent.append(discrip)
+      
+//     const price = document.querySelector('.price')
+//     price.innerHTML = '<span>' + books.price + '</span>'
+//     divContent.append(price)
+//   })
+// }
+
+// function generateBookList(books) {
+//   for(let book of books){
+//     const bookList = document.getElementById("list")
+//     // bookList.textContent = book.title;
+//     bookList.id = book.id;
+//     bookList.appendChild(booksList())
+    
+//   }
+// }
+
+
+
 
 

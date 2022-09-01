@@ -33,7 +33,7 @@ html::-webkit-scrollbar-thumb{
 
 
 .header-1{
-    background:#fff;
+    background:rgb(236, 225, 225);
     padding:4rem ;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb{
 .header-1 .logo{
     font-size: 2.5rem;
     font-weight: bolder;
-    color: blue;
+    color: purple;
 }
 
 .header .header-1 .logo i{
@@ -88,7 +88,7 @@ html::-webkit-scrollbar-thumb{
 
 .header-1 .icons div:hover,
 .header-1 .icons a:hover{
-    color:blueviolet;
+    color:green;
 }
 #search-btn{
     display: none;
@@ -108,18 +108,13 @@ html::-webkit-scrollbar-thumb{
     font-size: 2.7rem;
 }
 .navbar a:hover{
-    background:brown;
+    background:green;
 }
-
-
 .header-2.active{
     position:fixed;
     top:0; left:0; right:0;
     z-index: 1000;
 }
-
-
-
 .login-form-container{
   display: flex;
   align-items: center;
@@ -131,10 +126,8 @@ html::-webkit-scrollbar-thumb{
   height:100%;
   width:100%;
 }
-
-
 .login-form-container form{
-  background:rgb(234, 221, 221);
+  background:rgb(242, 226, 226);
   border:.1rem solid rgba(225, 24, 24, 0.1);
   width:40rem;
   padding:2rem;
@@ -142,20 +135,17 @@ html::-webkit-scrollbar-thumb{
   border-radius: .5rem;
   margin:2rem;
 }
-
 .login-form-container form h3{
   font-size: 2.5rem;
   text-transform: uppercase;
   color:brown;
   text-align: center;
 }
-
 .login-form-container form span{
   display: block;
   font-size: 1.5rem;
   padding-top: 1rem;
 }
-
 .login-form-container form .box{
   width: 100%;
   margin:.7rem 0;
@@ -166,17 +156,15 @@ html::-webkit-scrollbar-thumb{
   color:rgb(20, 16, 16);
   text-transform: none;
 }
-
 .login-form-container form .checkbox{
   display:flex;
   align-items: center;
   gap:.5rem;
   padding:1rem 0;
 }
-
 .login-form-container form .checkbox label{
   font-size: 1.4rem;
-  color:rgb(69, 68, 68);
+  color:rgb(53, 52, 52);
   cursor: pointer;
 }
 .btn{
@@ -190,11 +178,9 @@ html::-webkit-scrollbar-thumb{
   cursor: pointer;
   font-weight: 500;
 }
-
 .btn:hover{
-  background:#738279;
+  background:green;
 }
-
 .login-form-container form .btn{
   text-align: center;
   width:100%;
@@ -209,7 +195,6 @@ html::-webkit-scrollbar-thumb{
   color:purple;
   text-decoration: underline;
 }
-
 .login-form-container #close-login-btn{
   position: absolute;
   top:1.5rem; right:2.5rem;
