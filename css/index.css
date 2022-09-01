@@ -213,7 +213,6 @@ html::-webkit-scrollbar-thumb{
   background-size: cover;
   background-position: center;
 }
-
 .row{
   display:flex;
   align-items: center;
@@ -240,7 +239,7 @@ html::-webkit-scrollbar-thumb{
   margin-top: -2rem;
 }
 .content h3{
-  color:var(--black);
+  color:green;
   font-size: 4.5rem;
 }
 .content p{
@@ -262,28 +261,27 @@ html::-webkit-scrollbar-thumb{
   top:50%; left:0;
   transform: translateY(-50%);
   width: 100%;
-  height:.01rem;
-  background: rgba(91, 150, 35, 0.1);
+  height:.1rem;
+  background: green;
   z-index: -1;
 }
-
 .heading span{
-  font-size: 3rem;
+  font-family: 'Tangerine', serif;
+  font-size: 7rem;
   padding:.5rem 2rem;
-  color:rgb(32, 30, 30);
+  color:purple;
   background: #fff;
-  border:.2rem solid rgba(174, 18, 10, 0.1);
+  border:.2rem solid green;
 }
-
 .box{
   margin:2rem 0;
   position: relative;
   overflow: hidden;
-  border:.1rem solid rgba(225, 24, 24, 0.1);
+  border:.15rem solid purple;
   text-align: center;
 }
 .box:hover{
-  border:.1rem solid rgb(29, 26, 26);
+  border:.15rem solid green;
 }
 #image{
   padding:1rem;
@@ -296,10 +294,10 @@ html::-webkit-scrollbar-thumb{
   height: 25rem;
 }
 .box .icons{
-  border-bottom: .1rem solid rgb(34, 33, 33);
+  border-bottom: .15rem solid green;
   position: absolute;
   top:0; left:0; right: 0;
-  background: #fff;
+  background: rgb(245, 240, 240);
   z-index: 1;
   transform: translateY(-105%);
 }
@@ -320,20 +318,28 @@ html::-webkit-scrollbar-thumb{
   padding:1.5rem;
 }
 #content h3{
+  font-family: "Sofia", sans-serif;
   font-size: 2rem;
   color:black;
+  font-weight: 3rem;
 }
 #content .price{
   font-size: 2.2rem;
   color:black;
   padding-top: 1rem;
 }
-/* h5 and p */
-#content .price span{
+#content h5{
   font-size: 1.5rem;
-  color:var(--light-color);
-  text-decoration: line-through;
 }
+#content p{
+  font-family: 'Tangerine', serif;
+  font-size: 2rem;
+}
+/* #content .price span{
+  font-size: 1.5rem;
+  color:green;
+  text-decoration: line-through;
+} */
 .swiper-button-next,
 .swiper-button-prev{
     border:var(--border-hover);
