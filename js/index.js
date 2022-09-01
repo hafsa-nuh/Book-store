@@ -1,5 +1,8 @@
 let searchForm = document.querySelector('.search-form');
 
+
+
+
 // adding event lisrener to the serch btn
 document.querySelector('#search-btn').addEventListener('click', () =>{
   searchForm.classList.toggle('active');
@@ -62,51 +65,43 @@ let swiper = new Swiper(".books-slider", {
 // Book feature
 document.addEventListener("DOMContentLoaded", () => {//Getting the list of books:
   fetch("http://localhost:3000/books") 
-  .then(resp => resp.json()) 
-  .then((bookInfo) => console.log(bookInfo))
+  .then(resp => resp.json())
+  .then(data => data.forEach (renderContent))
+//   .then((bookInfo) => console.log(bookInfo))
   // generateBookList(bookInfo));
   
 });
 
 // just rough work
 
-function renderImage(books){
-  const divImage = document.querySelector('#image')
-  const image = document.createElement('img')
-  image.src = books.img_url
-  divImage.append(image)
+function renderContent(books){
+    const divImage = document.querySelector('#image')
+    // divImage.src = books.ima_url
+
+    const image = document.createElement('img')
+    // image.src = books.img_url
+    image.setAttribute('src',books.img_url)
+    divImage.append(image)
+
+    const divContent = document.querySelector('#content')
+    divContent.innerHTML = ""
+    const title = document.createElement('h3')
+    title.textContent = books.title
+    divContent.append(title)
+  
+    const author = document.createElement('h5')
+    author.textContent = books.author
+    divContent.append(author)
+  
+    const discrip = document.createElement('p')
+    discrip.textContent = books.description
+    divContent.append(discrip)
+  
+    const price = document.querySelector('.price')
+    price.innerHTML = '<span> ksh' + books.price + '</span>'
+    divContent.append(price)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(renderContent())
 
 
 // const divImage = document.querySelector('#image')
