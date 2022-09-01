@@ -78,34 +78,38 @@ function getaAllBooks(){
 }
 
 function renderContent(books){
-  const parentDiv = document.querySelector('.swiper-slide box')
-    const card = document.querySelector('.card')
-    const divImage = document.querySelector('#image img')
-    divImage.src = books.img_url
-    // parentDiv.appendChild(divImage)
+//   const parentDiv = document.querySelector('.swiper-slide box')
+//     const card = document.querySelector('.card')
+//     const divImage = document.querySelector('#image img')
+//     divImage.src = books.img_url
+//     // parentDiv.appendChild(divImage)
 
-   const divContect = document.querySelector('#content')
-   const title = document.querySelector('h3').textContent = books.title
-   const author = document.querySelector('h5').textContent = books.author
-   const descrip= document.querySelector('p').textContent = books.description
-   const price = document.querySelector('.price').textContent = `Ksh ${books.price}`
-   const btn = document.querySelector('#btn')
-   divContect.append(title,author,descrip,price , btn)
-  //  parentDiv.appendChild(divContect , divImage)
+//  /*** this only displays the 1st object and mixes up the dscription */
+//    const divContect = document.querySelector('#content')
+//    const title = document.querySelector('h3').textContent = books.title
+//    const author = document.querySelector('h5').textContent = books.author
+//    const descrip= document.querySelector('#des').textContent = books.description
+//    const price = document.querySelector('.price').textContent = `Ksh ${books.price}`
+//    const btn = document.querySelector('#btn')
+//    divContect.append(title,author,descrip,price , btn)
+//   //  parentDiv.appendChild(divContect , divImage)
 
-   card.append(divImage,divContect)
-   parentDiv.appendChild(card)
+//    card.append(divImage,divContect)
+//    parentDiv.appendChild(card)
 
-  
-  // document.querySelector('#content h3').textContent = books.title
-  // document.querySelector('#content h5').textContent = books.author
-  // document.querySelector('#content p').textContent = books.description
-  // document.querySelector('#content .price').textContent = `Ksh ${books.price}`
+
+/** withot appending and targeting each element it only brings the last object */
+  const divImage = document.querySelector('#image img')
+  divImage.src = books.img_url
+  document.querySelector('#content h3').textContent = books.title
+  document.querySelector('#content h5').textContent = books.author
+  document.querySelector('#content p').textContent = books.description
+  document.querySelector('#content .price').textContent = `Ksh ${books.price}`
 
 }
 renderContent()
 
-/*** it doesnt work */
+/*** it doesnt work and it doesnt displany anything */
 // function renderBooks(books){
 //   const parentDiv = document.createElement('div')
 //   parentDiv.innerHTML = `
