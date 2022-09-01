@@ -64,46 +64,37 @@ let swiper = new Swiper(".books-slider", {
 
 // Book feature
 document.addEventListener("DOMContentLoaded", () => {//Getting the list of books:
-  fetch("http://localhost:3000/books") 
-  .then(resp => resp.json())
-  .then(data => data.forEach (renderContent))
-//   .then((bookInfo) => console.log(bookInfo))
-//   generateBookList(bookInfo));
-  
+  getaAllBooks()
+  // renderContent()
 });
 
-// just rough work
-
-function renderContent(books){
-    const divImage = document.querySelector('#image')
-    // divImage.src = books.ima_url
-
-    const image = document.createElement('img')
-    // image.src = books.img_url
-    image.setAttribute('src',books.img_url)
-    divImage.append(image)
-
-    const divContent = document.querySelector('#content')
-    divContent.innerHTML = ""
-    const title = document.createElement('h3')
-    title.textContent = books.title
-    divContent.append(title)
+function getaAllBooks(){
+  fetch("http://localhost:3000/books") 
+  .then(resp => resp.json())
+  .then(data => data.forEach (books =>
+    // console.log(books)
+     renderContent(books)
+  ))
   
-    const author = document.createElement('h5')
-    author.textContent = books.author
-    divContent.append(author)
-  
-    const discrip = document.createElement('p')
-    discrip.textContent = books.description
-    divContent.append(discrip)
-  
-    const price = document.querySelector('.price')
-    price.innerText = '<span> ksh' + books.price + '</span>'
-    divContent.append(price)
+
 }
-console.log(renderContent())
+function renderContent(books){
+    const divImage = document.querySelector('#image img')
+    divImage.src = books.img_url
 
+   document.querySelector('#content h3').textContent = books.title
+   document.querySelector('#content h5').textContent = books.author
+   document.querySelector('#content p').textContent = books.description
+   document.querySelector('#content .price').textContent = `Ksh ${books.price}`
 
+}
+renderContent()
+  
+
+ // const image = document.createElement('img')
+    // // image.src = books.img_url
+    // image.setAttribute('src',books.img_url)
+    // divImage.append(image)
 // const divImage = document.querySelector('#image')
 // const divContent = document.querySelector('#content')
 // function generateBookList(bookID){
@@ -134,6 +125,8 @@ console.log(renderContent())
 //     divContent.append(price)})
 //   })
 // }
+
+
 
 // swiper for the book features
 let swiperBook = new Swiper(".featured-slider", {
@@ -213,7 +206,7 @@ function loader(){
 }
 
 function fadeOut(){
-  setTimeout(loader, 2000);
+  setTimeout(loader, 1000);
 }
 fadeOut()
 
