@@ -71,21 +71,63 @@ function getaAllBooks(){
   .then(data => data.forEach (books =>
     // console.log(books)
      renderContent(books)
+    // renderBooks(books)
   ))
   
 
 }
+
 function renderContent(books){
+  const parentDiv = document.querySelector('.swiper-slide box')
+    const card = document.querySelector('.card')
     const divImage = document.querySelector('#image img')
     divImage.src = books.img_url
+    // parentDiv.appendChild(divImage)
 
-   document.querySelector('#content h3').textContent = books.title
-   document.querySelector('#content h5').textContent = books.author
-   document.querySelector('#content p').textContent = books.description
-   document.querySelector('#content .price').textContent = `Ksh ${books.price}`
+   const divContect = document.querySelector('#content')
+   const title = document.querySelector('h3').textContent = books.title
+   const author = document.querySelector('h5').textContent = books.author
+   const descrip= document.querySelector('p').textContent = books.description
+   const price = document.querySelector('.price').textContent = `Ksh ${books.price}`
+   const btn = document.querySelector('#btn')
+   divContect.append(title,author,descrip,price , btn)
+  //  parentDiv.appendChild(divContect , divImage)
+
+   card.append(divImage,divContect)
+   parentDiv.appendChild(card)
+
+  
+  // document.querySelector('#content h3').textContent = books.title
+  // document.querySelector('#content h5').textContent = books.author
+  // document.querySelector('#content p').textContent = books.description
+  // document.querySelector('#content .price').textContent = `Ksh ${books.price}`
 
 }
 renderContent()
+
+/*** it doesnt work */
+// function renderBooks(books){
+//   const parentDiv = document.createElement('div')
+//   parentDiv.innerHTML = `
+//   <div class="icons">
+//     <a href="#" class="fas fa-search"></a>
+//     <a href="#" class="fas fa-heart"></a>
+//     <a href="#" class="fas fa-eye"></a>
+//   </div>
+//   <div id="image">
+//     <img src="${books.img_url}" alt="">
+//   </div>
+//   <div id="content">
+//     <h3>${books.title}</h3> 
+//     <h5>${books.author}</h5>
+//     <p>${books.description}</p>
+//     <div class="price">$ ${books.price}</div>
+//     <a href="#" class="btn" id="btn">Like</a>
+//   </div>
+//   `
+//   document.querySelector('.swiper-slide box').appendChild(parentDiv)
+// }
+// renderBooks()
   
 
  
@@ -128,7 +170,7 @@ let swiperBook = new Swiper(".featured-slider", {
   loop:true,
   centeredSlides: true,
   autoplay: {
-    delay: 9500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   navigation: {
