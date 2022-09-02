@@ -66,26 +66,26 @@ document.addEventListener("DOMContentLoaded", () => {//Getting the list of books
 });
 
 function getaAllBooks(){
-  
-  fetch("http://localhost:3000/books") 
-  .then (function(response){
-    return response.json();
-  })
-
-  // .then(function(data){
-  //   renderContent(data.message)
-  // })
-  // .then(resp => resp.json())
-  .then(data => data.forEach (books =>
-  //   // console.log(books)
+  fetch("http://localhost:3000/books")
+  .then(resp => resp.json())
+  .then(data => data.forEach (books =>{
     renderContent(books)
-    // renderBooks(books)
-    // renderBooksInLst(books)
-    // generateBookList(books)
-    // .catch(function(books){
-    //   console.log(books)
-    // })
-  ))
+  }))
+
+//   // .then(function(data){
+//   //   renderContent(data.message)
+//   // })
+//   // 
+//   .then(data => data.forEach (books =>
+//   //   // console.log(books)
+//     renderContent(books)
+//     // renderBooks(books)
+//     // renderBooksInLst(books)
+//     // generateBookList(books)
+//     // .catch(function(books){
+//     //   console.log(books)
+//     // })
+//   ))
 }
 
 
@@ -145,29 +145,29 @@ function getaAllBooks(){
 // console.log(generateBookList())
 
 function renderContent(books){
-//   const parentDiv = document.querySelector('.swiper-slide box')
-//     const card = document.querySelector('.card')
-//     const divImage = document.querySelector('#image img')
-//     divImage.src = books.img_url
+  const parentDiv = document.querySelector('.swiper-slide box')
+    const card = document.querySelector('.card')
+    const divImage = document.querySelector('#image img')
+    divImage.src = books.img_url
 //     // parentDiv.appendChild(divImage)
 
-//  /*** this only displays the 1st object and mixes up the dscription */
+// //  /*** this only displays the 1st object and mixes up the dscription */
 //    const divContect = document.querySelector('#content')
 //    const title = document.querySelector('h3').textContent = books.title
 //    const author = document.querySelector('h5').textContent = books.author
 //    const descrip= document.querySelector('#des').textContent = books.description
 //    const price = document.querySelector('.price').textContent = `Ksh ${books.price}`
-//    const btn = document.querySelector('#btn')
-//    divContect.append(title,author,descrip,price , btn)
-//   //  parentDiv.appendChild(divContect , divImage)
+//   //  const btn = document.querySelector('#btn')
+//    divContect.append(title,author,descrip,price )
+// //   //  parentDiv.appendChild(divContect , divImage)
 
 //    card.append(divImage,divContect)
 //    parentDiv.appendChild(card)
 
 
 /** withot appending and targeting each element it only brings the last object */
-  const divImage = document.getElementById("#image img")
-  divImage.src = document.getElementById('#image')
+  // const divImage = document.getElementById("#image img")
+  // divImage.src = document.getElementById('#image')
 
   document.querySelector('#content h3').textContent = books.title
   document.querySelector('#content h5').textContent = books.author
@@ -175,7 +175,7 @@ function renderContent(books){
   document.querySelector('#content .price').textContent = `Ksh ${books.price}`
   
 }
-
+// console.log(renderContent())
 
 /*** it doesnt work and it doesnt displany anything */
 // function renderBooks(books){
@@ -369,6 +369,101 @@ fadeOut()
     
 //   }
 // }
+
+
+
+
+
+
+ 
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   fetch("http://localhost:3000/books")
+//   .then(res => res.json)
+//   .then(books => 
+//     // console.log(books))
+//     {renderContent(books)})
+// })
+
+
+// function renderImage(booksImage){
+//   const divImage = document.querySelector('#image img')
+//   divImage.src = booksImage.img_url
+// }
+// renderImage()
+
+
+// lets try to go at it as if its a js file by creating a data.js file
+// function renderContent(){
+//   bookStore.books.forEach(booksContent =>{
+//     const parentDiv = document.querySelector('.swiper-slide box')
+//     // const parentUl = document.querySelector('#book-list')
+
+//     const li = document.createElement('li')
+//     const divImage = document.createElement('div')
+//     divImage.id ='image'
+//     const img = document.createElement('img')
+//     divImage.append(img)
+
+//     const divContect = document.createElement('div')
+//     divContect.id = 'content'
+//     const h3 = document.createElement('h3')  
+//     const h5 = document.createElement('h5')
+//     const p = document.createElement('p')
+//     const divPrice = document.createElement('div')
+//     divPrice.className = 'price'
+//     const a = document.createElement('a')
+//     a.className ='btn'
+//     divContect.append(h3,h5,p,divPrice,a)
+
+//     img.src = booksContent.img_url
+//     h3.textContent = booksContent.title
+//     h5.textContent =booksContent.author
+//     p.textContent =booksContent.description
+//     divPrice.textContent = booksContent.price
+//     a.textContent = 'like'
+    
+//     li.append(divImage,divContect)
+//     // parentUl.appendChild(li)
+//     parentDiv.appendChild(li)
+//   })
+// }
+// renderContent()
+// console.log(renderContent())
+
+// const bookCard = booksContent =>{
+//   const parentDiv = document.querySelector('.swiper-slide box')
+
+//   const li = document.createElement('li')
+
+//   const divImage = document.createElement('div')
+//   divImage.id ='image'
+//   const img = document.createElement('img')
+//   divImage.append(img)
+
+//   const divContect = document.createElement('div')
+//   divContect.id = 'content'
+  
+//   const h3 = document.createElement('h3')  
+//   const h5 = document.createElement('h5')
+//   const p = document.createElement('p')
+//   const divPrice = document.createElement('div')
+//   divPrice.className = 'price'
+//   const a = document.createElement('a')
+//   a.className ='btn'
+//   divContect.append(h3,h5,p,divPrice,a)
+
+//  img.src = booksContent.img_url
+//   h3.textContent = booksContent.title
+//   h5.textContent =booksContent.author
+//   p.textContent =booksContent.description
+//   divPrice.textContent = booksContent.price
+//   a.textContent = 'like'
+    
+//   li.append(divImage,divContect)
+//   parentDiv.appendChild(li)
+// }
+// bookStore.books.forEach(bookCard)
 
 
 
