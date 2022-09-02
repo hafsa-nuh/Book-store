@@ -250,6 +250,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 /* book feature section */
+#featured{
+  padding: 5rem;
+}
 .heading{
   text-align: center;
   margin-bottom: 2rem;
@@ -273,19 +276,32 @@ html::-webkit-scrollbar-thumb{
   background: #fff;
   border:.2rem solid green;
 }
+/* #list-book li{
+  float: left; */
+  /* display: block; */
+/* }
+li{
+  display: inline;
+} */
 .featured-slider .box{
-  width: 25rem;
+  /* width: 25rem; */
   margin:2rem 0;
   position: relative;
   overflow: hidden;
   border:.15rem solid purple;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  /* height: 60rem; */
+  /* padding: 5rem; */
+  bottom: 2rem;
 }
 .featured-slider .box:hover{
   border:.15rem solid green;
+  cursor: pointer;
 }
 .featured-slider .box #image{
-  padding:1rem;
+  padding:2rem;
   background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
 .featured-slider .box:hover #image{
@@ -330,17 +346,45 @@ html::-webkit-scrollbar-thumb{
   padding-top: 1rem;
 }
 #content h5{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 #content p{
   font-family: 'Tangerine', serif;
   font-size: 2rem;
 }
-/* #content .price span{
-  font-size: 1.5rem;
-  color:green;
-  text-decoration: line-through;
-} */
+
+#list-book {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.list-swiper.toggle {
+  right: 40px;
+  margin-left: 66px;
+}
+li{
+  padding: 1em;
+  list-style: none;
+}
+#list-book li {
+  height: 65rem;
+  width: 40rem;
+  list-style: none;
+  display: inline;
+}
 .swiper-button-next,
 .swiper-button-prev{
     border:gray;

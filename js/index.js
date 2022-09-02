@@ -63,6 +63,7 @@ let swiper = new Swiper(".books-slider", {
   },
 });
 
+
 // Book feature
 document.addEventListener("DOMContentLoaded", () => {//Getting the list of books:
   getaAllBooks()
@@ -76,6 +77,7 @@ function getaAllBooks(){
   function bookList(book){
     const parentUl = document.getElementById('list-book')
     const list = document.createElement('li')
+    list.classList = 'list-swiper'
     list.innerHTML = `
     <div class="swiper-slide box">
       <div class="icons">
@@ -99,7 +101,7 @@ function getaAllBooks(){
 
 
 // swiper for the book features
-let swiperBook = new Swiper(".featured-slider#list-book", {
+let swiperBook = new Swiper("#list-book ", {
   spaceBetween: 10,
   loop:true,
   centeredSlides: true,
