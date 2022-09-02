@@ -5,6 +5,10 @@ document.querySelector('#search-btn').addEventListener('click', () =>{
   searchForm.classList.toggle('active');
 })
 
+// adding default prevent on the buttons
+// document.querySelector('button').addEventListener('submit',(event) => {event.preventDefault()})
+
+
 window.onscroll = () =>{
     // searchForm.classList.remove('active');
     if(window.scrollY > 80){
