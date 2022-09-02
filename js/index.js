@@ -101,7 +101,7 @@ function getaAllBooks(){
 
 
 // swiper for the book features
-let swiperBook = new Swiper("#list-book ", {
+let swiperBook = new Swiper(".swiper-wrapper ", {
   spaceBetween: 10,
   loop:true,
   centeredSlides: true,

@@ -352,13 +352,17 @@ li{
   font-family: 'Tangerine', serif;
   font-size: 2rem;
 }
-
+/* .swiper-wrapper{
+  columns: 3;
+} */
 #list-book {
   text-align: center;
   font-size: 18px;
+  columns: 3;
+
 
   /* Center slide text vertically */
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -369,21 +373,17 @@ li{
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
-}
-.list-swiper.toggle {
-  right: 40px;
-  margin-left: 66px;
+  align-items: center; */
 }
 li{
-  padding: 1em;
+  padding: 0.5em;
   list-style: none;
 }
 #list-book li {
-  height: 65rem;
-  width: 40rem;
+  height: 76rem;
+  width: 34rem;
   list-style: none;
-  display: inline;
+  /* display: inline; */
 }
 .swiper-button-next,
 .swiper-button-prev{
