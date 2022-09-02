@@ -273,21 +273,22 @@ html::-webkit-scrollbar-thumb{
   background: #fff;
   border:.2rem solid green;
 }
-.box{
+.featured-slider .box{
+  width: 25rem;
   margin:2rem 0;
   position: relative;
   overflow: hidden;
   border:.15rem solid purple;
   text-align: center;
 }
-.box:hover{
+.featured-slider .box:hover{
   border:.15rem solid green;
 }
-#image{
+.featured-slider .box #image{
   padding:1rem;
   background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
-.box:hover #image{
+.featured-slider .box:hover #image{
   transform: translateY(6rem);
 }
 #image img{
