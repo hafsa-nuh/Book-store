@@ -58,11 +58,11 @@
     },
     {
       "id": 8,
-      "title": "Archangel's Prophecy",
-      "price": 1290,
-      "description": "Midnight and dawn, Elena’s wings are unique among angelkind…and now they’re failing. The first mortal to be turned into an immortal in angelic memory, she’s regressing. Becoming more and more human. Easier to hurt. Easier to kill.Elena and Raphael must unearth the reason for the regression before it’s too late and Elena falls out of the sky. Yet even as they fight a furious battle for Elena’s very survival, violent forces are gathering in New York and across the world.In China, the Archangel Favashi is showing the first signs of madness. In New York, a mysterious sinkhole filled with lava swallows a man whole. In Africa, torrential monsoon rains flood rolling deserts. And in Elena’s mind whispers a haunting voice that isn’t her own.This time, survival may not be possible…not even for the consort of an archangel.",
-      "author": "Nalini Singh",
-      "img_url": "https://i.postimg.cc/m2ygkysK/book4.jpg"
+      "title": "To Kill a Mockingbird",
+      "price": 900,
+      "description": "Despite being told they cannot attend the trial, Jem, Scout, and Dill sit in the balcony with Black townspeople. Atticus clearly establishes that Mayella Ewell's accusation is false; furthermore, she most likely attempted to seduce Tom because he was the only person who showed her kindness. Bob Ewell, Mayella's father, is heavily implied to have physically and sexually abused Mayella (including to have beaten her for her attempt to seduce Tom) and is directly caught in several lies. However, despite a longer-than-normal deliberation, the jury finds Tom guilty. Jem is devastated. Tom is sentenced to death.",
+      "author": "Harper Lee",
+      "img_url": "https://i.postimg.cc/Dwcnfvqh/book1.webp"
     },
     {
       "id": 9,
@@ -82,11 +82,11 @@
     },
     {
       "id": 11,
-      "title": "To Kill a Mockingbird",
-      "price": 900,
-      "description": "Despite being told they cannot attend the trial, Jem, Scout, and Dill sit in the balcony with Black townspeople. Atticus clearly establishes that Mayella Ewell's accusation is false; furthermore, she most likely attempted to seduce Tom because he was the only person who showed her kindness. Bob Ewell, Mayella's father, is heavily implied to have physically and sexually abused Mayella (including to have beaten her for her attempt to seduce Tom) and is directly caught in several lies. However, despite a longer-than-normal deliberation, the jury finds Tom guilty. Jem is devastated. Tom is sentenced to death.",
-      "author": "Harper Lee",
-      "img_url": "https://i.postimg.cc/Dwcnfvqh/book1.webp"
+      "title": "Archangel's Prophecy",
+      "price": 1290,
+      "description": "Midnight and dawn, Elena’s wings are unique among angelkind…and now they’re failing. The first mortal to be turned into an immortal in angelic memory, she’s regressing. Becoming more and more human. Easier to hurt. Easier to kill.Elena and Raphael must unearth the reason for the regression before it’s too late and Elena falls out of the sky. Yet even as they fight a furious battle for Elena’s very survival, violent forces are gathering in New York and across the world.In China, the Archangel Favashi is showing the first signs of madness. In New York, a mysterious sinkhole filled with lava swallows a man whole. In Africa, torrential monsoon rains flood rolling deserts. And in Elena’s mind whispers a haunting voice that isn’t her own.This time, survival may not be possible…not even for the consort of an archangel.",
+      "author": "Nalini Singh",
+      "img_url": "https://i.postimg.cc/m2ygkysK/book4.jpg"
     }
   ]
 }
