@@ -276,15 +276,8 @@ html::-webkit-scrollbar-thumb{
   background: #fff;
   border:.2rem solid green;
 }
-/* #list-book li{
-  float: left; */
-  /* display: block; */
-/* }
-li{
-  display: inline;
-} */
-.featured-slider .box{
-  /* width: 25rem; */
+.box{
+  /* width: 35rem; */
   margin:2rem 0;
   position: relative;
   overflow: hidden;
@@ -292,11 +285,9 @@ li{
   text-align: center;
   width: 100%;
   height: 100%;
-  /* height: 60rem; */
-  /* padding: 5rem; */
   bottom: 2rem;
 }
-.featured-slider .box:hover{
+.box:hover{
   border:.15rem solid green;
   cursor: pointer;
 }
@@ -352,38 +343,18 @@ li{
   font-family: 'Tangerine', serif;
   font-size: 2rem;
 }
-/* .swiper-wrapper{
-  columns: 3;
-} */
 #list-book {
   text-align: center;
   font-size: 18px;
   columns: 3;
-
-
-  /* Center slide text vertically */
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; */
 }
 li{
   padding: 0.5em;
   list-style: none;
 }
 #list-book li {
-  height: 76rem;
-  width: 34rem;
-  list-style: none;
-  /* display: inline; */
+  height: 70rem;
+  width: 43rem;  
 }
 .swiper-button-next,
 .swiper-button-prev{
