@@ -10,6 +10,7 @@
     text-transform: capitalize;
     transition:all .2s linear;
     transition:width none;
+    /* background: wheat; */
 }
 
 html{
@@ -21,6 +22,9 @@ html{
 
 html::-webkit-scrollbar{
     width:1rem;
+}
+body{
+  background-color: rgb(245, 240, 230);
 }
 
 html::-webkit-scrollbar-track{
@@ -458,10 +462,10 @@ li{
 /* blog section */
 .blogs-slider .box{
   margin:2rem 0;
-  border:.1rem solid rgba(225, 24, 24, 0.1);
+  border:.12rem solid purple;
 }
 .blogs-slider .box:hover{
-  border:.1rem solid #17eb6f;
+  border:.14rem solid #17eb6f;
 }
 .blogs-slider .box .image{
   height: 25rem;
@@ -512,8 +516,8 @@ li{
 }
 .footer .box-container .box a{
   display: block;
-  font-size: 1.4rem;
-  color:rgb(167, 104, 104);
+  font-size: 1.6rem;
+  color:green;
   padding:1rem 0;
 }
 
@@ -544,7 +548,7 @@ li{
   border-radius: 50%; 
 }
 .share a:hover{
-  background:gray;
+  background:green;
 }
 .credit{
   border-top: .1rem solid rgba(225, 24, 24, 0.1);
