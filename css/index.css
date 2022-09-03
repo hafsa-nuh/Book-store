@@ -462,10 +462,10 @@ li{
 /* blog section */
 .blogs-slider .box{
   margin:2rem 0;
-  border:.12rem solid purple;
+  border:.1rem solid purple;
 }
 .blogs-slider .box:hover{
-  border:.14rem solid #17eb6f;
+  border:.1rem solid green;
 }
 .blogs-slider .box .image{
   height: 25rem;
