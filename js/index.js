@@ -1,9 +1,46 @@
 let searchForm = document.querySelector('.search-form');
 
+
+// to make the search function so that the input is displayed
+// const userCard = document.querySelector('[data-user-template]')
+// const userCardContainer =document.querySelector('[data-user-card-container]')
+// const searchInput =document.querySelector('[data-search]')
+
+// // looping throu the books and hide all that dont match the input
+// let books = []
+// searchInput.addEventListener('input', (event)=>{
+//   const value = event.target.value.toLowerCase()
+//   books.forEach(book =>{
+//     const isVisible = book.title.toLowerCase().includes(value) || 
+//       book.author.toLowerCase().includes(value) //this is to make only the author or the title name visible
+//     book.element.classList.toggle('hide', !isVisible) // if the user is visible display it if not hide it
+//   })
+//   console.log(books)
+
+// })
+// //fetching 
+// fetch("http://localhost:3000/books")
+//   .then(resp => resp.json())
+//   .then(data => {
+//     books = data.map(book =>{
+//     const card = userCard.content.cloneNode(true).children[0]
+//     const title =card.querySelector('[data-title]')
+//     title.textContent = book.title
+//     const author =card.querySelector('[data-author]')
+//     author.textContent = book.author
+//     userCardContainer.appendChild(card)
+//     return {title: book.title, author: book.author, element: card}
+//     // console.log(book)
+//   })
+//   })
+
 // adding event lisrener to the serch btn
 document.querySelector('#search-btn').addEventListener('click', () =>{
   searchForm.classList.toggle('active');
 })
+
+// making the search-btn more active
+
 
 // adding default prevent on the buttons
 // document.querySelector('button').addEventListener('submit',(event) => {event.preventDefault()})
@@ -72,13 +109,13 @@ function getaAllBooks(){
   fetch("http://localhost:3000/books")
   .then(resp => resp.json())
   .then(data => data.forEach (books =>{
-    bookList(books)})
-  )}
-  function bookList(book){
-    const parentUl = document.getElementById('list-book')
-    const list = document.createElement('li')
-    list.classList = 'list-swiper'
-    list.innerHTML = `
+    bookList(books)}))
+}
+function bookList(book){
+  const parentUl = document.getElementById('list-book')
+  const list = document.createElement('li')
+  list.classList = 'list-swiper'
+  list.innerHTML = `
     <div class="swiper-slide box">
       <div class="icons">
         <a href="#" class="fas fa-search"></a>

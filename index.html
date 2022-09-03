@@ -21,9 +21,17 @@
     <div class="header-1">
       <a href="#" class="logo"> <i class="fas fa-book"></i> The House Of Books </a>
       <form  class="search-form">
-        <input type="search" n placeholder="search here..." id="search-box">
+        <input type="search" n placeholder="search here..." id="search-box" data-search="">
         <label for="search-box" class="fas fa-search"></label>
       </form>
+      <div class="user-cards" data-user-card-container>
+        <template data-user-template>
+          <div class="card">
+            <div class="header" data-title >title</div>
+            <div class="body" data-author>author</div>
+          </div>
+        </template>
+      </div>
       <div class="icons">
         <div id="search-btn"  class="fas fa-search"></div>
         <div id="login-btn" class="fas fa-user"></div>
@@ -101,7 +109,6 @@
   </section>
 
   <!-- newsletter section starts -->
-
   <section class="newsletter">
     <form action="">
       <h3>subscribe for latest updates</h3>
@@ -112,7 +119,6 @@
   </section>
 
   <!-- reviews section starts  -->
-
   <section class="reviews" id="reviews">
     <h1 class="heading"> <span>client's reviews</span> </h1>
     <div class="swiper reviews-slider">
@@ -263,7 +269,6 @@
 
   
 <!-- footer section starts  -->
-
 <section class="footer">
   <div class="box-container">
     <div class="box">
@@ -313,11 +318,7 @@
 </section>
 
 
-
-
-
-<!-- loader  -->
-
+<!-- loader image when the page loads  -->
 <div class="loader-container">
   <img src="image/loader-img.gif" alt="">
 </div>
@@ -325,13 +326,6 @@
 
 
 
-
-
-
-
-
-
- 
 
 
 
