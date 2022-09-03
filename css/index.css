@@ -266,6 +266,12 @@ html::-webkit-scrollbar-thumb{
   line-height: 2;
   padding:1rem 0;
 }
+.content a{
+  font-style: italic;
+}
+#shop{
+  color: rgb(44, 40, 40);
+}
 
 /* book feature section */
 #featured{
