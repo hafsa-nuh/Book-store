@@ -225,7 +225,7 @@ function loader(){
 }
 
 function fadeOut(){
-  setTimeout(loader, 1000);
+  setTimeout(loader, 3000);
 }
 fadeOut()
 
