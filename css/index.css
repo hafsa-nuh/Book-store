@@ -367,20 +367,8 @@ html::-webkit-scrollbar-thumb{
   font-family: 'Tangerine', serif;
   font-size: 2rem;
 }
-#list-book {
-  text-align: center;
-  font-size: 18px;
-  columns: 3;
-}
-li{
-  padding: 0.5em;
-  list-style: none;
-}
-#list-book li {
-  height: 70rem;
-  width: 43rem;  
-}
-.swiper-button-next,
+
+/* .swiper-button-next,
 .swiper-button-prev{
     border:gray;
     height:4rem;
@@ -396,7 +384,7 @@ li{
 .swiper-button-prev:hover{
     background: gray;
     color:#fff;
-}
+} */
 
 /* newsletter */
 .newsletter{

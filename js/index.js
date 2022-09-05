@@ -106,11 +106,10 @@ function getaAllBooks() {
   );
 }
 function bookList(book) {
-  const parentUl = document.getElementById("list-book");
-  const list = document.createElement("li");
-  list.classList = "list-swiper";
-  list.innerHTML = `
-    <div class="swiper-slide box">
+  const parentDiv = document.getElementById("container");
+  const div = document.createElement("div");
+  div.className = "swiper-slide box";
+  div.innerHTML = `
       <div class="icons">
         <a href="#" class="fas fa-search"></a>
         <a href="#" class="fas fa-heart"></a>
@@ -124,10 +123,9 @@ function bookList(book) {
         <p id="des">${book.description}</p>
         <div class="price">Ksh${book.price}</div>
         <a href="#" class="btn" id="btn">Like</a>
-      </div>
-    </div>`;
-  console.log(book.author)
-  parentUl.appendChild(list);
+      </div>`;
+  // console.log(book.author)
+  parentDiv.appendChild(div);
 }
 
 //  a new formart of fetching
