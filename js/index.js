@@ -98,12 +98,12 @@ let swiper = new Swiper(".books-slider", {
 // Book feature
 document.addEventListener("DOMContentLoaded", () => {
   //Getting the list of books:
-  getaAllBooks();
+  getAllBooks();
 });
-function getaAllBooks() {
+function getAllBooks() {
   fetch("http://localhost:3000/books")
   .then((resp) => resp.json())
-  .then((data) => data.forEach((books) => { bookList(books);})
+  .then((data) => data.forEach((books) => { bookList(books)})
   );
 }
 function bookList(book) {
@@ -128,7 +128,6 @@ function bookList(book) {
   // console.log(book.author)
   parentDiv.appendChild(div);
 }
-
 
 //  swipe for reviews
 let swiperReview = new Swiper(".reviews-slider", {

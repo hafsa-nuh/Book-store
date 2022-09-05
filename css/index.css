@@ -300,6 +300,18 @@ html::-webkit-scrollbar-thumb{
   background: #fff;
   border:.2rem solid green;
 }
+/* #container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; */
+  /* columns: 3; */
+  /* display: table;
+  width: 100%;
+
+} */
+/* .swiper-slide{
+  display: table-cell;
+} */
 .box{
   /* width: 35rem; */
   margin:2rem 0;
