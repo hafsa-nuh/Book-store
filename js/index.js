@@ -130,6 +130,40 @@ function bookList(book) {
   parentUl.appendChild(list);
 }
 
+//  a new formart of fetching
+// fetch('db.json')
+// .then(resp => resp.json())
+// .then(books => {
+//   localStorage.setItem('db',JSON.stringify(books))
+// })
+
+//  load more for the books feature
+// let content = document.querySelector('.swiper-wrapper')
+
+// let loadMore = document.querySelector('load-more-button')
+
+// // control how many books we display when the page 1st loads
+// let initialItems = 3
+
+// // control how many books are displayed when load more button is clickecd
+// let loadItems = 3
+
+// //function to display the 1st set of books
+// function loadInitialItems(){
+//   // let books = JSON.parse(localStorage.getItem('books'))
+//   let out = list
+//   let counter =0
+//   if(counter<initialItems){
+//     out += list
+//   }
+//   counter++  
+//   // let div = document.querySelector('.featured-slider')
+//   // content.insertBefore(div ,loadMore)
+//   // div.innerHTML = out
+// }
+// loadInitialItems()
+
+
 // swiper for the book features
 // let swiperBook = new Swiper(".swiper-wrapper ", {
 //   spaceBetween: 10,
