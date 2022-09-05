@@ -368,24 +368,6 @@ html::-webkit-scrollbar-thumb{
   font-size: 2rem;
 }
 
-/* .swiper-button-next,
-.swiper-button-prev{
-    border:gray;
-    height:4rem;
-    width:4rem;
-    color:black;
-    background: #fff;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after{
-    font-size: 2rem;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    background: gray;
-    color:#fff;
-} */
-
 /* newsletter */
 .newsletter{
   background:url(../image/letter.jpeg) no-repeat;

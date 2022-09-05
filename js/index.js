@@ -62,7 +62,7 @@ window.onload = () => {
   fadeOut();
 };
 
-// adding events on the form
+// adding events on the form at the nav
 let loginForm = document.querySelector(".login-form-container");
 
 document.querySelector("#login-btn").addEventListener("click", () => {
@@ -73,6 +73,7 @@ document.querySelector("#close-login-btn").addEventListener("click", () => {
   loginForm.classList.remove("active");
 });
 
+//books on the home page
 //https://swiperjs.com/demos#slides-per-view
 let swiper = new Swiper(".books-slider", {
   loop: true,
@@ -128,68 +129,6 @@ function bookList(book) {
   parentDiv.appendChild(div);
 }
 
-//  a new formart of fetching
-// fetch('db.json')
-// .then(resp => resp.json())
-// .then(books => {
-//   localStorage.setItem('db',JSON.stringify(books))
-// })
-
-//  load more for the books feature
-// let content = document.querySelector('.swiper-wrapper')
-
-// let loadMore = document.querySelector('load-more-button')
-
-// // control how many books we display when the page 1st loads
-// let initialItems = 3
-
-// // control how many books are displayed when load more button is clickecd
-// let loadItems = 3
-
-// //function to display the 1st set of books
-// function loadInitialItems(){
-//   // let books = JSON.parse(localStorage.getItem('books'))
-//   let out = list
-//   let counter =0
-//   if(counter<initialItems){
-//     out += list
-//   }
-//   counter++  
-//   // let div = document.querySelector('.featured-slider')
-//   // content.insertBefore(div ,loadMore)
-//   // div.innerHTML = out
-// }
-// loadInitialItems()
-
-
-// swiper for the book features
-// let swiperBook = new Swiper(".swiper-wrapper ", {
-//   spaceBetween: 10,
-//   loop: true,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 1000,
-//     disableOnInteraction: false,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next" /**https://swiperjs.com/swiper-api#events */,
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     450: {
-//       slidesPerView: 2,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//     },
-//     1024: {
-//       slidesPerView: 4,
-//     },
-//   },
-// });
 
 //  swipe for reviews
 let swiperReview = new Swiper(".reviews-slider", {
