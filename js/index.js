@@ -144,6 +144,7 @@ function swiper(className){
 swiper(".blogs-slider")
 swiper(".books-slider")
 swiper('.reviews-slider')
+// swiper('.featured-slider')
 
 
 // read more btn for blog
