@@ -310,7 +310,7 @@ html::-webkit-scrollbar-thumb{
   height: 25rem;
 }
 
-/* scrolling horizontally */
+/* scrolling horizontally:: https://ilxanlar.medium.com/how-i-built-a-smooth-horizontal-scrolling-list-with-only-a-few-lines-of-css-8c574ad6c963 */
 #container{
   align-items: flex-start;
   display: flex;

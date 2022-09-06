@@ -1,22 +1,31 @@
+document.addEventListener("DOMContentLoaded", () => {
+  //Getting the list of books:
+  getAllBooks();
+});
+
 let searchForm = document.querySelector(".search-form");
 
-// // to make the search function so that the input is displayed
-// const userCard = document.querySelector('[data-user-template]')
-// const userCardContainer =document.querySelector('[data-user-card-container]')
-// const searchInput =document.querySelector('[data-search]')
+// to make the search function so that the input is displayed
+const userCard = document.querySelector('[data-user-template]')
+const userCardContainer =document.querySelector('.user-cards')
+const searchInput =document.querySelector('#search-box')
 
 // // looping throu the books and hide all that dont match the input
-// let books = []
-// searchInput.addEventListener('input', (event)=>{
-//   const value = event.target.value.toLowerCase()
-//   books.forEach(book =>{
-//     const isVisible = book.title.toLowerCase().includes(value) ||
-//       book.author.toLowerCase().includes(value) //this is to make only the author or the title name visible
-//     book.element.classList.toggle('hide', !isVisible) // if the user is visible display it if not hide it
-//   })
-//   console.log(books)
-
-// })
+let books = []
+searchInput.addEventListener('input', (event)=>{
+  const value = event.target.value.toLowerCase()
+  books.forEach(book =>{
+    const isVisible = book.title.toLowerCase().includes(value) ||
+      book.author.toLowerCase().includes(value) //this is to make only the author or the title name visible
+    // book.element.classList.toggle('hide', !isVisible) // if the user is visible display it if not hide it
+    if(isVisible ){  
+    console.log(isVisible)
+    bookList(book)
+    console.log(book)
+  }
+  })
+  // console.log(books)
+})
 // //fetching
 // fetch("http://localhost:3000/books")
 //   .then(resp => resp.json())
@@ -44,7 +53,6 @@ document.querySelector("#search-btn").addEventListener("click", () => {
 // document.querySelector('button').addEventListener('submit',(event) => {event.preventDefault()})
 
 window.onscroll = () => {
-  // searchForm.classList.remove('active');
   if (window.scrollY > 80) {
     document.querySelector(".header-2").classList.add("active");
   } else {
@@ -73,37 +81,16 @@ document.querySelector("#close-login-btn").addEventListener("click", () => {
   loginForm.classList.remove("active");
 });
 
-//books on the home page
-//https://swiperjs.com/demos#slides-per-view
-let swiper = new Swiper(".books-slider", {
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
 
 // Book feature
-document.addEventListener("DOMContentLoaded", () => {
-  //Getting the list of books:
-  getAllBooks();
-});
 function getAllBooks() {
   fetch("http://localhost:3000/books")
   .then((resp) => resp.json())
-  .then((data) => data.forEach((books) => { bookList(books)})
+  .then((data) => 
+  {
+    data.forEach((book) => { books.push(book)
+      bookList(book)})
+  }
   );
 }
 function bookList(book) {
@@ -129,51 +116,35 @@ function bookList(book) {
   parentDiv.appendChild(div);
 }
 
-//  swipe for reviews
-let swiperReview = new Swiper(".reviews-slider", {
-  spaceBetween: 10,
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
+// function for all the swiper of books, reviews and reviews
+function swiper(className){
+  let swiperSlider = new Swiper(className, {
+    spaceBetween: 10,
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
-    768: {
-      slidesPerView: 2,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
     },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
+  })
+  return swiperSlider
+}
+swiper(".blogs-slider")
+swiper(".books-slider")
+swiper('.reviews-slider')
 
-// swipe for blog
-let swiperBlog = new Swiper(".blogs-slider", {
-  spaceBetween: 10,
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
 
 // read more btn for blog
 const readMore = document.querySelector("#btn");

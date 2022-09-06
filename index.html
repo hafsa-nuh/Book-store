@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- font link -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <link rel="stylesheet" href="./css/index.css">
 
 </head>
@@ -21,17 +21,10 @@
     <div class="header-1">
       <a href="#" class="logo"> <i class="fas fa-book"></i> The House Of Books </a>
       <form  class="search-form">
-        <input type="search" n placeholder="search here..." id="search-box" data-search="">
+        <input type="search" n placeholder="search here..." id="search-box">
         <label for="search-box" class="fas fa-search"></label>
       </form>
-      <div class="user-cards" data-user-card-container>
-        <template data-user-template>
-          <div class="card">
-            <div class="header" data-title >title</div>
-            <div class="body" data-author>author</div>
-          </div>
-        </template>
-      </div>
+      
       <div class="icons">
         <div id="search-btn"  class="fas fa-search"></div>
         <div id="login-btn" class="fas fa-user"></div>
@@ -70,9 +63,18 @@
     </form>
   </div>
 
-
   <!-- home section -->
   <section class="home" id="home">
+    <div class="row">
+      <div class="user-cards" >
+        <template data-user-template>
+          <div class="card">
+            <div class="header" data-title >title</div>
+            <div class="body" data-author>author</div>
+          </div>
+        </template>
+      </div>
+    </div>
     <div class="row">
       <div class="content">
         <h3>upto 45% off</h3>
@@ -308,11 +310,6 @@
 <div class="loader-container">
   <img src="image/loader-img.gif" alt="">
 </div>
-
-
-
-
-
 
 
 
