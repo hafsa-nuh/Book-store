@@ -3,7 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   getAllBooks();
 });
 
+// search button
 let searchForm = document.querySelector(".search-form");
+// adding event lisrener to the serch btn
+document.querySelector("#search-btn").addEventListener("click", () => {
+  searchForm.classList.toggle("active");
+});
 
 // to make the search function so that the input is displayed
 const userCard = document.querySelector('[data-user-template]')
@@ -42,12 +47,8 @@ searchInput.addEventListener('input', (event)=>{
 //   })
 //   })
 
-// adding event lisrener to the serch btn
-document.querySelector("#search-btn").addEventListener("click", () => {
-  searchForm.classList.toggle("active");
-});
 
-// making the search-btn more active
+
 
 // adding default prevent on the buttons
 // document.querySelector('button').addEventListener('submit',(event) => {event.preventDefault()})
@@ -70,7 +71,7 @@ window.onload = () => {
   fadeOut();
 };
 
-// adding events on the form at the nav
+// adding events on the user icon for openning and closing
 let loginForm = document.querySelector(".login-form-container");
 
 document.querySelector("#login-btn").addEventListener("click", () => {
@@ -80,6 +81,9 @@ document.querySelector("#login-btn").addEventListener("click", () => {
 document.querySelector("#close-login-btn").addEventListener("click", () => {
   loginForm.classList.remove("active");
 });
+
+// form submition button 
+document.querySelector('#form').addEventListener('submit', (event)=>event.preventDefault())
 
 
 // Book feature
@@ -173,6 +177,6 @@ function loader() {
 }
 
 function fadeOut() {
-  setTimeout(loader, 3000);
+  setTimeout(loader, 2500);
 }
 fadeOut();
