@@ -257,14 +257,6 @@ html::-webkit-scrollbar-thumb{
 #shop{
   color: rgb(44, 40, 40);
 }
-.shop{
-  display: inline-block;
-  list-style: none;
-  padding: 1rem;
-}
-.shop img:hover{
-  width: 80px;
-}
 
 /* book feature section */
 #featured{
