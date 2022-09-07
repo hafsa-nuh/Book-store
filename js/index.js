@@ -147,6 +147,19 @@ swiper('.reviews-slider')
 // swiper('.featured-slider')
 
 
+// the subscribe button
+document.getElementById('check').addEventListener('submit', (e)=> e.preventDefault())
+let popUp = document.getElementById('popup')
+
+function openPopup(){
+  popUp.classList.add('open-popup') //adding a class
+
+}
+function closePopup(){
+  popUp.classList.remove('open-popup')
+}
+
+
 // read more btn for blog
 const readMore = document.querySelector("#btn");
 const text = document.querySelector("#text");

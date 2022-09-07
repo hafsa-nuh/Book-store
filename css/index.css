@@ -382,6 +382,9 @@ html::-webkit-scrollbar-thumb{
   text-align: center;
   padding:5rem 0;
 }
+#check{
+  text-align: center;
+}
 .newsletter form h3{
   font-size: 2.2rem;
   color:rgb(17, 8, 8);
@@ -397,7 +400,52 @@ html::-webkit-scrollbar-thumb{
   border-radius: .5rem;
   text-transform: none;
 }
+.popup{
+  width: 300px;
+  background: rgb(246, 232, 232);
+  border-radius: 6px;
+  position: absolute;
+  /* top: 0;
+  left: 50%; */
+  transform: translate(-10%, -80%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+}
+.open-popup{
+  visibility: visible;
+  transform: translate(-10%, -80%) scale(1);
 
+
+}
+.popup img{
+  width: 50px;
+  margin-top: -20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+.popup button{
+  width: 100%;
+  margin-top:10px ;
+  padding: 10px 0;
+  background:purple;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button:hover{
+  background-color: green;
+}
 /* reviews */
 .reviews-slider .box{
   border:.1rem solid purple;
