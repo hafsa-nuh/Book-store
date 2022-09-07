@@ -165,11 +165,20 @@ function closePopup(){
 
 
 // read more btn for blog
-const readMore = document.querySelector("#btn");
-const text = document.querySelector("#text");
-readMore.addEventListener("click", () => {
-  text.classList.toggle("show-more");
-});
+
+const parentContainer = document.querySelector('.content')
+parentContainer.addEventListener('click', event =>{
+  const current = event.target
+  const isReadMorebtn = current.className.includes('btn')
+  if (!isReadMorebtn)
+    return ;
+    const  currentText = event.target.parentNode.querySelector('.read-more')
+    currentText.classList.toggle('read-more--show')
+    current.textContent = current.textContent.includes('read more') ? "read less...." : "read more...."
+  
+})
+
+
 
 // loging
 function loader() {
