@@ -79,7 +79,15 @@
       <div class="content">
         <h3>upto 45% off</h3>
         <p>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations. Chances are your friends are discussing their favorite (and least favorite) books on The House Of Books </p>
-        <a href="#" class="btn">shop by <span id="shop">category</span></a>
+        <a href="#" class="btn" onclick="openPopup()" >shop by <span id="shop">category</span></a>
+        <div class="popup" id="popup">
+          <li class="shop"><img src="image/shop1.jpeg" alt=""></li>
+          <li class="shop"><img src="image/shop2.jpeg" alt=""></li>
+          <li class="shop"><img src="image/shop3.jpeg" alt=""></li>
+          <h2>Buy Any category</h2>
+          <p>You have successfully subscribe to our Page . Thanks!</p>
+          <button type="button" onclick="closePopup()">Add To Cart</button>
+        </div>
       </div>
       <!-- https://swiperjs.com/demos#slides-per-view -->
       <div class="swiper books-slider">
