@@ -48,7 +48,7 @@ View [LIVE](https://hafsa-nuh.github.io/Book-store/):
 
 ## LICENSE
 
-This project is under the [MIT](License)license.
+This project is under the [MIT](License) license.
 
 
 
